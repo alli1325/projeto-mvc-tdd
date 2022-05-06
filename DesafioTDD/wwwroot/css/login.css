@@ -1,0 +1,187 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6695ec;
+}
+
+.container {
+    width: 100%;
+    padding: 50px 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6695ec;
+}
+
+.device {
+    height: 700px;
+    width: 400px;
+    padding: 50px;
+    background: #F2F0FF;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.device-admin {
+    height: 700px;
+    width: 400px;
+    padding: 50px;
+    background: #F2F0FF;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.device-admin::-webkit-scrollbar{
+    width: 8px;
+}
+
+.device-admin::-webkit-scrollbar-track{
+    background: rgb(233, 233, 233);
+    border-radius: 5px;
+}
+
+.device-admin::-webkit-scrollbar-thumb{
+    background: rgb(207, 206, 206);
+    border-radius: 5px;
+}
+
+
+.icon {
+    font-size: 14px;
+}
+
+.icon img {
+    width: 60%;
+    margin-left: 55px;
+    margin-bottom: 30px;
+}
+
+.icon h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.icon-ativar {
+    margin-top: -40px;
+}
+
+.form-label {   
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+button {
+    margin-left: 5px;
+} 
+
+.acessos {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+.card-container {
+    width: 100%;
+    height:200px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.card-body {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background: radial-gradient(#fcc11f, #fa8f15);
+    border-radius: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-upper, .card-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.card-bottom {
+    margin-top: auto;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.chip {
+    width: 40px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-right: auto;
+}
+
+.wifi {
+    padding: 4px;
+}
+
+.wifi, .wifi:before {
+    display: inline-block;
+    border: 10px double transparent;
+    border-top-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.wifi:before {
+    content: '';
+    width: 0;
+    height: 0;
+}
+
+.number {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.mastercard {
+    width: 40px;
+    height: 40px;
+    background: #f83e3e;
+    border-radius: 50%;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+}
+
+.mastercard:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #f8c026;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.form-habilitar {
+    margin-top: -30px;
+}
+
+h2 {
+    margin-bottom: -40px;
+}
+

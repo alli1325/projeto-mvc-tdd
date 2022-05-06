@@ -1,0 +1,339 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6695ec;
+}
+
+.container {
+    width: 100%;
+    padding: 50px 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6695ec;
+}
+
+.device {
+    height: 700px;
+    width: 400px;
+    background: #F2F0FF;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    border-radius: 50%;
+    padding: 40px 30px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    cursor: pointer;
+}
+
+.cards {
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 100%;
+    height:200px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(#fcc11f, #fa8f15);
+    border-radius: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-upper, .card-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.card-bottom {
+    margin-top: auto;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.chip {
+    width: 40px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-right: auto;
+}
+
+.wifi {
+    padding: 4px;
+}
+
+.wifi, .wifi:before {
+    display: inline-block;
+    border: 10px double transparent;
+    border-top-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.wifi:before {
+    content: '';
+    width: 0;
+    height: 0;
+}
+
+.number {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.mastercard {
+    width: 40px;
+    height: 40px;
+    background: #f83e3e;
+    border-radius: 50%;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+}
+
+.mastercard:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #f8c026;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.transactions h2{
+    padding-top: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.transactions {
+    height: 190px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px 30px;
+    box-shadow: 0 -1px 3px 1px #F2F2F2;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    
+}
+
+.transactions::-webkit-scrollbar{
+    width: 8px;
+}
+
+.transactions::-webkit-scrollbar-track{
+    background: rgb(233, 233, 233);
+    border-radius: 5px;
+}
+
+.transactions::-webkit-scrollbar-thumb{
+    background: rgb(207, 206, 206);
+    border-radius: 5px;
+}
+
+.operation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.operation::-webkit-scrollbar {
+    width: 2em;
+}
+
+.amount {
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom:  4px;
+    line-height: 14px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #AAA;
+}
+
+.withdraw {
+    color: #e73535;
+}
+
+.deposit {
+    color: #15b874;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.buttons form {
+    width: 100%;
+    margin: 3px;
+}
+
+.buttons span {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #F2F0FF;
+}
+
+.deposito, .saque{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 15px 30px;
+    box-shadow: 0 -1px 3px 1px #F2F2F2;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.deposito {
+    background: #14e08b;
+}
+
+.deposito:hover {
+    background: #15b874;
+}
+
+.saque {
+    background: #fcc11f;
+}
+
+.saque:hover {
+    background: rgb(228, 172, 19);
+}
+
+.funds {
+    height: 50px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px 30px;
+    box-shadow: 0 -1px 3px 1px #F2F2F2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+button {
+    margin-left: 5px;
+} 
+
+#confirmar {
+    background: #14e08b;
+    color: #FFFFFF;
+}
+
+#confirmar:hover {
+    background: #15b874;
+}
+
+#cancelar {
+    background: #f83e3e;
+    color: #FFFFFF;
+}
+
+#cancelar:hover {
+    background: #e73535;
+}
+
+.warning-image{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.message{
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+}
+
+.form-habilitar {
+    margin-top: -10px;
+}
+
+.span-alert {
+    font-size: 12px;
+}
+
+h2 {
+    margin-bottom: -10px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}

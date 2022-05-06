@@ -1,0 +1,61 @@
+@using DesafioTDD.DTO
+@model DesafioTDD.DTO.SaqueSucessoDTO;
+@{
+    ViewData["Title"] = "Erro";
+
+    List<string> notas = new List<string>();
+    if(@Model.Ced100 > 0){
+        notas.Add("R$100: " + @Model.Ced100);
+    }
+    if(@Model.Ced50 > 0){
+        notas.Add("R$50: " + @Model.Ced50);
+    }
+    if(@Model.Ced20 > 0){
+        notas.Add("R$20: " + @Model.Ced20);
+    }
+    if(@Model.Ced10 > 0){
+        notas.Add("R$10: " + @Model.Ced10);
+    }
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="~/css/index.css">
+    <title>Meu Cartão</title>
+</head>
+<body>
+    <div class="container">
+        <div class="device">
+            <div class="header">
+                <form  asp-action="Sacar" asp-controller="ATM">
+                    <input type="hidden" name="numeroCartao" id="numeroCartao" value="@Model.Numero">
+                    <button class="arrow"></button>
+                </form>
+            </div>
+            <img src="~/images/check-svgrepo-com.svg" class="p-4 warning-image"></img>
+            <div class="message">
+                <div>Saque Realizado</div>
+                <div>|| NOTAS ||</div>
+                @foreach(var nota in notas){
+                    <div>@nota</div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
