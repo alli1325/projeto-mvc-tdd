@@ -45,7 +45,7 @@ A aplicação já vem com dados populados para a realização de testes.
 ##### Validação de acesso de conta via cartão
 > Validação de acesso de conta via libera o acesso ao terminal e demais operações de usuário
 
-<img src=/uploads/4e24c8f8e13dcf7583f3f6e4e0884261/login.PNG />
+<img src=https://user-images.githubusercontent.com/48235791/169366151-2c84287b-4011-4a3e-8086-d546c816c9e7.PNG />
 
 
 Validações de campos de acesso via cartão é feita via DataAnnotations no Form de envio, validações com o BD são feitas via Action.
@@ -69,7 +69,7 @@ Esta feature possui as seguintes validações.
 > Validação de acesso administrador libera o acesso à pagina de gestão de notas 
 > do terminal.
 
-<img src=/uploads/9c2eebb62c076ef8e7d0dc2d489390f0/loginAdmin.PNG />
+<img src=https://user-images.githubusercontent.com/48235791/169366202-00c17af2-430a-4d35-b066-952353aaa15c.PNG />
 
 Administrador possui um único acesso nesta aplicação sem a possibilidade de um novo cadastro, portando não há validações de campo somente validade de BD via Action.
 ###### Usuário
@@ -83,7 +83,7 @@ Administrador possui um único acesso nesta aplicação sem a possibilidade de u
 ##### Ativação de novo cartão
 > Ativação de novo cartão realiza o cadastro de uma nova conta junto ao BD.
 
-<img src=/uploads/e1019703184bd737789dc7ade9552765/habilitaCartao.PNG />
+<img src=https://user-images.githubusercontent.com/48235791/169366597-73663a5a-9b59-4a9a-bb03-ee47245fee67.PNG />
 
 Validações de campos de novo cartão é feita via DataAnnotations no Form de envio,
 validações com o BD são feitas via Action.
@@ -111,7 +111,7 @@ Esta feature possui as seguintes validações.
 > Gestão de notas retorna informações da quantidade de notas no terminal 
 > divido por valores e também o saldo todas do terminal.
 
-<img src=/uploads/2ca54009150051ec06f99fbacb4a8b20/gestaoNotas.PNG />
+<img src=https://user-images.githubusercontent.com/48235791/169366678-9cdc5447-4c65-4722-8b20-4655dc649cdf.PNG />
 
 Validações de campos de novo cartão é feita via DataAnnotations no Form de envio.
 
@@ -131,7 +131,7 @@ Validações de campos de novo cartão é feita via DataAnnotations no Form de e
 temos o saldo seguido dos botões para as operações 'Depósito' e 'Saque', abaixo 
 as informações de extrato com todas as operações realizadas na conta.
 
-<img src=/uploads/636ee0ce385abc80313bed38325c8010/acessoConta.PNG />
+<img src=https://user-images.githubusercontent.com/48235791/169366854-77f1ac34-5438-428b-a0b0-92f4ac7488eb.PNG />
 
 - Esta view é renderizada com informações de extrato puxadas do BD.
 
@@ -139,7 +139,7 @@ as informações de extrato com todas as operações realizadas na conta.
 > Ao clicar em deposito o campo 'Extrato' é substituido por campo de valor
 para o depósito.
 
-<img src=/uploads/e46a76d3e908f04a32372c4c6327873d/deposito.PNG />
+<img src=https://user-images.githubusercontent.com/48235791/169366898-b97819ce-1d7b-4b86-b9fa-87e8dd3b52dd.PNG />
 
 Validações de campo depósito é feita via DataAnnotations no Form de envio.
 
@@ -152,7 +152,7 @@ Validações de campo depósito é feita via DataAnnotations no Form de envio.
 > Ao clicar em saque o campo 'Extrato' é substituido por campo de valor
 para o saque.
 
-<img src=/uploads/e959546982bc08188f209e09e563efc7/saque.PNG />
+<img src=https://user-images.githubusercontent.com/48235791/169366916-685ab4f0-bab3-4136-9dda-4dbe58e54b44.PNG />
 
 Validações de campo depósito é feita via DataAnnotations no Form de envio.
 
